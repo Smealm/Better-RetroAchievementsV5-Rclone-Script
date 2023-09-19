@@ -305,7 +305,7 @@ IF /I '%INPUT%'=='0' GOTO MENU
 
 :: Downloading Files
 
-:: Replace "C:\RA_collectiongames" to match where you want your games to be. beware this command will wipe the directory its pointed to before downloading.
+:: Replace "C:\RA_collection" to match where you want your games to be. beware this command will wipe the directory its pointed to before downloading.
 
 :: CSV Files
 
@@ -314,9 +314,9 @@ CLS
 ECHO Downloading CSV Files
 
 :: Downloading CSV's
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/have.csv" "C:\RA_collectiongames" --local-case-sensitive --delete-before --transfers 1 --checkers 2 --tpslimit 1
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/ignore.csv" "C:\RA_collectiongames" --local-case-sensitive --delete-before --transfers 1 --checkers 2 --tpslimit 1
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/miss.csv" "C:\RA_collectiongames" --local-case-sensitive --delete-before --transfers 1 --checkers 2 --tpslimit 1
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/have.csv" "C:\RA_collection" --local-case-sensitive --delete-before --transfers 1 --checkers 2 --tpslimit 1
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/ignore.csv" "C:\RA_collection" --local-case-sensitive --delete-before --transfers 1 --checkers 2 --tpslimit 1
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/miss.csv" "C:\RA_collection" --local-case-sensitive --delete-before --transfers 1 --checkers 2 --tpslimit 1
 
 :: Finished Dialogue
 CLS
@@ -328,73 +328,73 @@ TIMEOUT /T 5
 CLS
 ECHO echo Downloading 10MB Collection
 
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Arcade" "C:\RA_collectiongames\Arcade" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Arcade" "C:\RA_collection\Arcade" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/PC Engine" "C:\RA_collectiongames\PC Engine" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/PC Engine" "C:\RA_collection\PC Engine" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Arcadia 2001" "C:\RA_collectiongames\Arcadia 2001" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Arcadia 2001" "C:\RA_collection\Arcadia 2001" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Arduboy" "C:\RA_collectiongames\Arduboy" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Arduboy" "C:\RA_collection\Arduboy" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Elektor TV Games Computer" "C:\RA_collectiongames\Elektor TV Games Computer" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Elektor TV Games Computer" "C:\RA_collection\Elektor TV Games Computer" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Fairchild Channel F" "C:\RA_collectiongames\Fairchild Channel F" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Fairchild Channel F" "C:\RA_collection\Fairchild Channel F" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/WASM-4" "C:\RA_collectiongames\WASM-4" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/WASM-4" "C:\RA_collection\WASM-4" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Uzebox" "C:\RA_collectiongames\Uzebox" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Uzebox" "C:\RA_collection\Uzebox" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Interton VC 4000" "C:\RA_collectiongames\Interton VC 4000" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Interton VC 4000" "C:\RA_collection\Interton VC 4000" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Vectrex" "C:\RA_collectiongames\Vectrex" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Vectrex" "C:\RA_collection\Vectrex" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/ColecoVision" "C:\RA_collectiongames\ColecoVision" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/ColecoVision" "C:\RA_collection\ColecoVision" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Atari 7800" "C:\RA_collectiongames\Atari 7800" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Atari 7800" "C:\RA_collection\Atari 7800" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Atari 2600" "C:\RA_collectiongames\Atari 2600" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Atari 2600" "C:\RA_collection\Atari 2600" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Amstrad CPC" "C:\RA_collectiongames\Amstrad CPC" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Amstrad CPC" "C:\RA_collection\Amstrad CPC" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Atari Lynx" "C:\RA_collectiongames\Atari Lynx" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Atari Lynx" "C:\RA_collection\Atari Lynx" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Magnavox Odyssey 2" "C:\RA_collectiongames\Magnavox Odyssey 2" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Magnavox Odyssey 2" "C:\RA_collection\Magnavox Odyssey 2" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Intellivision" "C:\RA_collectiongames\Intellivision" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Intellivision" "C:\RA_collection\Intellivision" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/MSX" "C:\RA_collectiongames\MSX" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/MSX" "C:\RA_collection\MSX" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/PC-8000-8800" "C:\RA_collectiongames\PC-8000-8800" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/PC-8000-8800" "C:\RA_collection\PC-8000-8800" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Pokemon Mini" "C:\RA_collectiongames\Pokemon Mini" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Pokemon Mini" "C:\RA_collection\Pokemon Mini" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Virtual Boy" "C:\RA_collectiongames\Virtual Boy" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Virtual Boy" "C:\RA_collection\Virtual Boy" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/SG-1000" "C:\RA_collectiongames\SG-1000" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/SG-1000" "C:\RA_collection\SG-1000" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 cls
 echo Downloading 10MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Watara Supervision" "C:\RA_collectiongames\Watara Supervision" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Watara Supervision" "C:\RA_collection\Watara Supervision" --local-case-sensitive --delete-before --transfers 100 --checkers 200 --tpslimit 100
 
 :: Finished Dialogue
 CLS
@@ -406,28 +406,28 @@ TIMEOUT /T 5
 CLS
 ECHO Downloading 100MB Collection
 
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Game Boy" "C:\RA_collectiongames\Game Boy" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Game Boy" "C:\RA_collection\Game Boy" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
 cls
 ECHO Downloading 100MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Apple II" "C:\RA_collectiongames\Apple II" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Apple II" "C:\RA_collection\Apple II" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
 cls
 ECHO Downloading 100MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Atari Jaguar" "C:\RA_collectiongames\Atari Jaguar" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Atari Jaguar" "C:\RA_collection\Atari Jaguar" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
 cls
 ECHO Downloading 100MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/WonderSwan" "C:\RA_collectiongames\WonderSwan" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/WonderSwan" "C:\RA_collection\WonderSwan" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
 cls
 ECHO Downloading 100MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Game Boy Color" "C:\RA_collectiongames\Game Boy Color" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Game Boy Color" "C:\RA_collection\Game Boy Color" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
 cls
 ECHO Downloading 100MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Neo Geo Pocket" "C:\RA_collectiongames\Neo Geo Pocket" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Neo Geo Pocket" "C:\RA_collection\Neo Geo Pocket" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
 cls
 ECHO Downloading 100MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/32X" "C:\RA_collectiongames\32X" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/32X" "C:\RA_collection\32X" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
 cls
 ECHO Downloading 100MB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Master System" "C:\RA_collectiongames\Master System" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Master System" "C:\RA_collection\Master System" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
 
 :: Finished Dialogue
 CLS
@@ -439,13 +439,13 @@ TIMEOUT /T 5
 CLS
 ECHO Downloading 1GB Collection
 
-rclone sync -P --http-url https://ia902701.us.archive.org ":http:/29/items/retroachievements_collection_NES/NES" "C:\RA_collectiongames\NES" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
+rclone sync -P --http-url https://ia902701.us.archive.org ":http:/29/items/retroachievements_collection_NES/NES" "C:\RA_collection\NES" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
 CLS
 ECHO Downloading 1GB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Game Gear" "C:\RA_collectiongames\Game Gear" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Game Gear" "C:\RA_collection\Game Gear" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
 CLS
 ECHO Downloading 1GB Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Mega Drive" "C:\RA_collectiongames\Mega Drive" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Mega Drive" "C:\RA_collection\Mega Drive" --local-case-sensitive --delete-before --transfers 50 --checkers 100 --tpslimit 50
 
 :: Finished Dialogue
 CLS
@@ -457,46 +457,46 @@ TIMEOUT /T 5
 CLS
 ECHO Downloading 1GB or Higher Collection
 
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Game Boy Advance" "C:\RA_collectiongames\Game Boy Advance" --local-case-sensitive --delete-before --transfers 25 --checkers 50 --tpslimit 25
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Game Boy Advance" "C:\RA_collection\Game Boy Advance" --local-case-sensitive --delete-before --transfers 25 --checkers 50 --tpslimit 25
 cls
 ECHO Downloading 1GB or Higher Collection
-rclone sync -P --http-url https://ia802606.us.archive.org ":http:/25/items/retroachievements_collection_SNES/SNES" "C:\RA_collectiongames\SNES" --local-case-sensitive --delete-before --transfers 25 --checkers 50 --tpslimit 25 --filter="- *(MSU)*"
+rclone sync -P --http-url https://ia802606.us.archive.org ":http:/25/items/retroachievements_collection_SNES/SNES" "C:\RA_collection\SNES" --local-case-sensitive --delete-before --transfers 25 --checkers 50 --tpslimit 25 --filter="- *(MSU)*"
 cls
 ECHO Downloading 1GB or Higher Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Nintendo 64" "C:\RA_collectiongames\Nintendo 64" --local-case-sensitive --delete-before --transfers 8 --checkers 16 --tpslimit 8
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Nintendo 64" "C:\RA_collection\Nintendo 64" --local-case-sensitive --delete-before --transfers 8 --checkers 16 --tpslimit 8
 cls
 ECHO Downloading 1GB or Higher Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Nintendo DS" "C:\RA_collectiongames\Nintendo DS" --local-case-sensitive --delete-before --transfers 4 --checkers 8 --tpslimit 4
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Nintendo DS" "C:\RA_collection\Nintendo DS" --local-case-sensitive --delete-before --transfers 4 --checkers 8 --tpslimit 4
 cls
 ECHO Downloading 1GB or Higher Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Atari Jaguar CD" "C:\RA_collectiongames\Atari Jaguar CD" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Atari Jaguar CD" "C:\RA_collection\Atari Jaguar CD" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
 cls
 ECHO Downloading 1GB or Higher Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/3DO Interactive Multiplayer" "C:\RA_collectiongames\3DO Interactive Multiplayer" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/3DO Interactive Multiplayer" "C:\RA_collection\3DO Interactive Multiplayer" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
 cls
 ECHO Downloading 1GB or Higher Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/PC Engine CD" "C:\RA_collectiongames\PC Engine CD" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/PC Engine CD" "C:\RA_collection\PC Engine CD" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
 cls
 ECHO Downloading 1GB or Higher Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/PC-FX" "C:\RA_collectiongames\PC-FX" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/PC-FX" "C:\RA_collection\PC-FX" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
 cls
 ECHO Downloading 1GB or Higher Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Dreamcast" "C:\RA_collectiongames\Dreamcast" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Dreamcast" "C:\RA_collection\Dreamcast" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
 cls
 ECHO Downloading 1GB or Higher Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Sega CD" "C:\RA_collectiongames\Sega CD" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Sega CD" "C:\RA_collection\Sega CD" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
 cls
 ECHO Downloading 1GB or Higher Collection
-rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Saturn" "C:\RA_collectiongames\Saturn" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
+rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Saturn" "C:\RA_collection\Saturn" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
 cls
 ECHO Downloading 1GB or Higher Collection
-rclone sync -P --http-url https://ia902607.us.archive.org ":http:/23/items/retroachievements_collection_PlayStation_Portable/PlayStation Portable" "C:\RA_collectiongames\PlayStation Portable" --local-case-sensitive --delete-before --transfers 4 --checkers 8 --tpslimit 4
+rclone sync -P --http-url https://ia902607.us.archive.org ":http:/23/items/retroachievements_collection_PlayStation_Portable/PlayStation Portable" "C:\RA_collection\PlayStation Portable" --local-case-sensitive --delete-before --transfers 4 --checkers 8 --tpslimit 4
 cls
 ECHO Downloading 1GB or Higher Collection
-rclone sync -P --http-url https://ia902600.us.archive.org ":http:/29/items/retroachievements_collection_PlayStation/PlayStation" "C:\RA_collectiongames\PlayStation" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
+rclone sync -P --http-url https://ia902600.us.archive.org ":http:/29/items/retroachievements_collection_PlayStation/PlayStation" "C:\RA_collection\PlayStation" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
 cls
 ECHO Downloading 1GB or Higher Collection
-rclone sync -P --http-url https://ia904707.us.archive.org ":http:/16/items/retroachievements_collection_PS2/PlayStation 2" "C:\RA_collectiongames\PlayStation 2" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
+rclone sync -P --http-url https://ia904707.us.archive.org ":http:/16/items/retroachievements_collection_PS2/PlayStation 2" "C:\RA_collection\PlayStation 2" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
 
 :: Finished Dialogue
 CLS
