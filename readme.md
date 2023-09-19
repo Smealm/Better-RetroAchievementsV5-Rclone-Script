@@ -4,8 +4,6 @@ Batch file GUI I made out of boredom.
 Downloads files from Sites that hosts files for the purpose of preserving them.
 
 all files hosted by Content Preservation Platforms
-https://archive.org/download/retroachievements_collection_v5
-https://archive.org/details/xavierrenegadeangel
 
 RetroAchievements ROMSET Maintained by https://archive.org/details/@who_lee
 
