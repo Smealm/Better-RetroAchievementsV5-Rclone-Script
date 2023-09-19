@@ -326,7 +326,7 @@ TIMEOUT /T 5
 
 :: Below 10MB
 CLS
-ECHO echo Downloading 10MB Collection
+ECHO Downloading 10MB Collection
 
 rclone sync -P --http-url https://ia902505.us.archive.org ":http:/27/items/retroachievements_collection_v5/Arcade" "C:\RA_collection\Arcade" --local-case-sensitive --delete-before --transfers 3 --checkers 6 --tpslimit 3
 cls
