@@ -100,9 +100,9 @@ ECHO 1.  Xavier Renegade Angel
 :: ECHO 8.  placeholder
 :: echo 9.  placeholder
 :: echo 10.  placeholder
-:: echo.
-:: ECHO ==========PRESS '0' TO GO BACK==========
-:: ECHO.
+echo.
+ECHO ==========PRESS '0' TO GO BACK==========
+ECHO.
 
 SET INPUT=
 SET /P INPUT=Please select a number:
