@@ -41,7 +41,7 @@ SET /P INPUT=Please select a number:
 IF /I '%INPUT%'=='1' GOTO GAMES
 IF /I '%INPUT%'=='2' GOTO TVSHOWS
 IF /I '%INPUT%'=='3' GOTO MOVIES
-IF /I '%INPUT%'=='4' GOTO BOOKS
+:: IF /I '%INPUT%'=='4' GOTO BOOKS
 :: IF /I '%INPUT%'=='5' GOTO placeholder
 :: IF /I '%INPUT%'=='6' GOTO placeholder
 :: IF /I '%INPUT%'=='7' GOTO placeholder
