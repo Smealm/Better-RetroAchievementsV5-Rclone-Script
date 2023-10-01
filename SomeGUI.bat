@@ -120,7 +120,7 @@ echo (This might take a while)
 echo.
 
 ECHO OFF
-rclone sync -P --http-url https://ia903102.us.archive.org ":http:/28/items/xavierrenegadeangel/" "%userprofile%\Videos\TV\AdultSwim\XavierRenegadeAngel" --filter="- *.jpg" --filter="- *.xml" --filter="- *.sqlite" --filter="- *.ogv" --filter="- xavierrenegadeangel.thumbs/**" --ignore-case --delete-before --transfers 2 --checkers 4 --tpslimit 25
+rclone sync -P --http-url https://ia903102.us.archive.org ":http:/28/items/xavierrenegadeangel/" "%userprofile%\Videos\TV\AdultSwim\XavierRenegadeAngel" --filter="- *.jpg" --filter="- *.xml" --filter="- *.sqlite" --filter="- *.ogv" --filter="- *.torrent" --filter="- xavierrenegadeangel.thumbs/**" --ignore-case --delete-before --transfers 2 --checkers 4 --tpslimit 25
 
 CLS
 echo Xavier Renegade Angel successfully downloaded to %userprofile%\Videos\TV\AdultSwim\XavierRenegadeAngel
