@@ -96,7 +96,7 @@ echo.
 
 :: downloads Show to folder
 ECHO OFF
-rclone sync -P --http-url https://ia902701.us.archive.org ":http:/22/items/spongebob-squarepants-seasons-1-12-movies_20230709" "%userprofile%\Videos\TV\Nickelodeon\SpongeBobSquarePants" --filter="- *.jpg" --filter="- *.xml" --filter="- *.sqlite" --filter="- spongebob-squarepants-seasons-1-12-movies_20230709.thumbs/**" --filter"- SpongeBob SquarePants S12M01 The SpongeBob Movie Sponge on the Run.ia.mp4" --filter="- spongebob-squarepants-seasons-1-12-movies_20230709.thumbs/**" --filter"- SpongeBob SquarePants S12M01 The SpongeBob Movie Sponge on the Run.mp4" --local-case-sensitive --delete-before --transfers 2 --checkers 4 --tpslimit 125
+rclone sync -P --http-url https://ia902701.us.archive.org ":http:/22/items/spongebob-squarepants-seasons-1-12-movies_20230709" "%userprofile%\Videos\TV\Nickelodeon\SpongeBobSquarePants" --filter="- *.jpg" --filter="- *.xml" --filter="- *.sqlite" --filter="- spongebob-squarepants-seasons-1-12-movies_20230709.thumbs/**"  --local-case-sensitive --delete-before --transfers 2 --checkers 4 --tpslimit 125
 
 :: clears text on the screen and displays text indicating that its finsishes. waits 5 seconds, then returns to parent menu
 cls
