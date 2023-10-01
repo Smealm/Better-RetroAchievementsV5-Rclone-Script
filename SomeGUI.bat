@@ -19,7 +19,7 @@ CLS
 ECHO ============= Bleeding Edge =============
 ECHO -------------------------------------
 ECHO 1.  Video Games
-ECHO 2.  TV Shows
+ECHO 2.  TV Channels
 ECHO 3.  Movies
 :: ECHO 4.  placeholder
 :: ECHO 5.  placeholder
@@ -39,7 +39,7 @@ SET INPUT=
 SET /P INPUT=Please select a number:
 
 IF /I '%INPUT%'=='1' GOTO GAMES
-IF /I '%INPUT%'=='2' GOTO TVSHOWS
+IF /I '%INPUT%'=='2' GOTO TVCHANNELS
 IF /I '%INPUT%'=='3' GOTO MOVIES
 :: IF /I '%INPUT%'=='4' GOTO placeholder
 :: IF /I '%INPUT%'=='5' GOTO placeholder
@@ -96,7 +96,7 @@ echo.
 
 :: downloads Show to folder
 ECHO OFF
-rclone sync -P --http-url https://ia902701.us.archive.org ":http:/22/items/spongebob-squarepants-seasons-1-12-movies_20230709" "%userprofile%\Videos\TV\Nickelodeon\SpongeBobSquarePants" --filter="- *.jpg" --filter="- *.xml" --filter="- *.sqlite" --filter="- spongebob-squarepants-seasons-1-12-movies_20230709.thumbs/**"  --local-case-sensitive --delete-before --transfers 2 --checkers 4 --tpslimit 125
+rclone sync -P --http-url https://ia902701.us.archive.org ":http:/22/items/spongebob-squarepants-seasons-1-12-movies_20230709" "%userprofile%\Videos\TV\Nickelodeon\SpongeBobSquarePants" --filter="- *.jpg" --filter="- *.xml" --filter="- *.sqlite" --filter="- spongebob-squarepants-seasons-1-12-movies_20230709.thumbs/**" --filter="- The SpongeBob Movie Sponge on the Run"  --local-case-sensitive --delete-before --transfers 2 --checkers 4 --tpslimit 125
 
 :: clears text on the screen and displays text indicating that its finsishes. waits 5 seconds, then returns to parent menu
 cls
@@ -134,6 +134,22 @@ GOTO TV_ADULTSWIM
 
 
 
+:: South Park
+:TV_SOUTHPARKSHOW
+
+CLS
+echo Downloading South Park
+echo (This might take a while)
+echo.
+
+ECHO OFF
+rclone sync -P --http-url https://ia902607.us.archive.org ":http:/0/items/south-park-seasons-1-20-hd_202306/" "%userprofile%\Videos\TV\ComedyCentral\SouthPark" --filter="- *.jpg" --filter="- *.xml" --filter="- *.sqlite" --filter="- *.ogv" --filter="- *ia.mp4" --filter="- *.torrent" --filter="- south-park-seasons-1-20-hd_202306.thumbs/**" --ignore-case --delete-before --transfers 2 --checkers 4 --tpslimit 100
+
+CLS
+echo South park successfully downloaded to %userprofile%\Videos\TV\ComedyCentral\SouthPark
+
+timeout /t 5
+GOTO TV_COMEDYCENTRAL
 
 
 
@@ -180,14 +196,14 @@ GOTO TV_ADULTSWIM
 :: subcategories
 :: l8knfak7
 
-:TVSHOWS
+:TVCHANNELS
 CLS
 
 ECHO ============= TV CHANNELS =============
 ECHO -------------------------------------
 ECHO 1.  AdultSwim
 ECHO 2.  Nickelodeon
-:: ECHO 3.  placeholder
+ECHO 3.  Comedy Central 
 :: ECHO 4.  placeholder
 :: ECHO 5.  placeholder
 :: ECHO 6.  placeholder
@@ -204,7 +220,7 @@ SET /P INPUT=Please select a number:
 
 IF /I '%INPUT%'=='1' GOTO TV_ADULTSWIM
 IF /I '%INPUT%'=='2' GOTO TV_NICKELODEON
-:: IF /I '%INPUT%'=='3' GOTO placeholder
+IF /I '%INPUT%'=='3' GOTO TV_COMEDYCENTRAL
 :: IF /I '%INPUT%'=='4' GOTO placeholder
 :: IF /I '%INPUT%'=='5' GOTO placeholder
 :: IF /I '%INPUT%'=='6' GOTO placeholder
@@ -351,7 +367,7 @@ IF /I '%INPUT%'=='7' GOTO placeholder
 IF /I '%INPUT%'=='8' GOTO placeholder
 IF /I '%INPUT%'=='9' GOTO placeholder
 IF /I '%INPUT%'=='10' GOTO placeholder
-IF /I '%INPUT%'=='0' GOTO TVSHOWS
+IF /I '%INPUT%'=='0' GOTO TVCHANNELS
 
 :: ---------
 
@@ -388,7 +404,49 @@ IF /I '%INPUT%'=='1' GOTO TV_XavierRenegadeAngel
 :: IF /I '%INPUT%'=='8' GOTO placeholder
 :: IF /I '%INPUT%'=='9' GOTO placeholder
 :: IF /I '%INPUT%'=='10' GOTO placeholder
+IF /I '%INPUT%'=='0' GOTO TVCHANNELS
+
+
+
+:: ---------
+
+
+
+:TV_COMEDYCENTRAL
+CLS
+
+ECHO ============= COMEDY CENTRAL =============
+ECHO -------------------------------------
+ECHO 1.  South Park (96.3 GB)
+:: ECHO 2.  placeholder
+:: ECHO 3.  placeholder
+:: ECHO 4.  placeholder
+:: ECHO 5.  placeholder
+:: ECHO 6.  placeholder
+:: ECHO 7.  placeholder
+:: ECHO 8.  placeholder
+:: echo 9.  placeholder
+:: echo 10.  placeholder
+echo.
+ECHO ==========PRESS '0' TO GO BACK==========
+ECHO.
+
+SET INPUT=
+SET /P INPUT=Please select a number:
+
+IF /I '%INPUT%'=='1' GOTO TV_SOUTHPARKSHOW
+:: IF /I '%INPUT%'=='3' GOTO placeholder
+:: IF /I '%INPUT%'=='4' GOTO placeholder
+:: IF /I '%INPUT%'=='5' GOTO placeholder
+:: IF /I '%INPUT%'=='6' GOTO placeholder
+:: IF /I '%INPUT%'=='7' GOTO placeholder
+:: IF /I '%INPUT%'=='8' GOTO placeholder
+:: IF /I '%INPUT%'=='9' GOTO placeholder
+:: IF /I '%INPUT%'=='10' GOTO placeholder
 IF /I '%INPUT%'=='0' GOTO MENU
+
+
+
 
 
 
